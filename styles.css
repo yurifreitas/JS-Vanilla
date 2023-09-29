@@ -100,3 +100,36 @@ nav a:hover {
     height: 10vh;
 
 }
+
+.hamburger-menu {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.hamburger-menu .bar {
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar {
+    display: none;
+}

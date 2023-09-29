@@ -12,8 +12,6 @@ export function router() {
 
     setTimeout(() => {
         const routeHandler = getRouteHandler(currentRoute);
-        
-        console.log("routeHandler:", routeHandler);
         document.querySelector('#main').innerHTML = routeHandler();
 
         // Guarda de Rota: Esconde a Sidebar se estiver na página de login
