@@ -38,6 +38,12 @@ export const renderHeader = () => {
 
 export function openSideBar() {
   const sideBar = document.querySelector('sidebar')
-  sideBar.style.display = 'block'
+  if (sideBar.classList[0] === 'slideIn') {
+    sideBar.classList.remove('slideIn')
+    sideBar.classList.add('slideOut')
+  } else {
+    sideBar.classList.add('slideIn')
+    sideBar.classList.remove('slideOut')
+  }
   console.log('sidebar tá on!')
 }

@@ -51,17 +51,17 @@ nav a:hover {
 
 /* Estilize a barra lateral */
 #sidebar {
-  background-color: #555;
+  /* background-color: #555; */
   /* Cor de fundo da barra lateral */
   color: white;
   /* Cor do texto na barra lateral */
-  width: 20%;
+  /* width: 20%; */
   /* Largura da barra lateral */
 }
 
 /* Estilize o conteúdo principal (main) */
 #main {
-  display: block;
+  /* display: block; */
   width: 100%;
   padding: 10px;
   /* Espaçamento interno do conteúdo principal */
@@ -79,12 +79,12 @@ nav a:hover {
   text-align: center;
   /* Centraliza o texto no footer */
 }
-
+/*
 .row-top {
   display: flex;
   height: 20vh;
   width: 100%;
-}
+} */
 
 .row-center {
   width: 100%;
@@ -126,7 +126,7 @@ nav a:hover {
 .hamburger-menu.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-
+/*
 .navbar {
   display: none;
-}
+} */
