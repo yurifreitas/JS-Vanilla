@@ -1,4 +1,7 @@
+import getAllCaracters from '../services/allCharacters.js';
 import { initNavigation } from './navigation.js';
+
+
 
 
 function handleHashChange() {

@@ -10,7 +10,7 @@ export function router() {
     // Mostra o loading
     showLoadingScreen();
 
-    setTimeout(() => {
+    setTimeout(async () => {
         const routeHandler = getRouteHandler(currentRoute);
         document.querySelector('#main').innerHTML = routeHandler();
 
