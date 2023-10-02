@@ -1,0 +1,42 @@
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+      217deg,
+      var(--primary-red),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, var(--secondary-red), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, var(--tertiary-red), rgba(0, 0, 255, 0) 70.71%);
+}
+
+header div {
+  padding: 20px 40px;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header h1 {
+  color: var(--primary-grey);
+  font-size: 45px;
+}
+
+#navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+#navigation ul li:hover {
+  cursor: pointer;
+  color: gainsboro;
+  transform: scalex(1.05);
+}
+
+#search {
+  border-radius: 50px;
+  border: none;
+  padding: 10px 20px;
+}
