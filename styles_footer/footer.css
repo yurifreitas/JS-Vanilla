@@ -1,0 +1,81 @@
+Color Theme Swatches in Hex 
+.Valorant-1-hex { color: #FD4556; }
+.Valorant-2-hex { color: #BD3944; }
+.Valorant-3-hex { color: #53212B; }
+.Valorant-4-hex { color: #FFFBF5; }
+.Valorant-5-hex { color: #000000; }
+
+.footer{
+     height: 400px;
+     background: #333;
+}
+
+.section-footer{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.section-footer a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#section-logos{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#direitos{
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#direitos p{
+    color: rgb(152, 153, 153);
+    letter-spacing: 1px;
+}
+
+#section-links {
+    margin-top: 15px;
+    margin-bottom: 20px;         
+}
+
+#section-links a{
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#section-links a:active{
+    color: white;
+}
+
+#classificacao {
+    width: 200px;
+    height: 100px;
+}
+
+#section-classificacao{
+    margin-top: 15px;
+    margin-bottom: 20px;  
+}
