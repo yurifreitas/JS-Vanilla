@@ -5,13 +5,11 @@
 }
 
 :root {
-  --primary-purple: #1b2559;
-  --secondary-puple: #2b3674;
-  --tertiary-purple: #707eae;
-  --quartiary-purple: #8f9bba;
-  --primary-grey: #b0bbd5;
-  --secondary-grey: #f4f7fe;
-  --tertiary-grey: #e9edf7;
-  --primary-gradient: linear-gradient(#868cff 0%, #4318ff 100%);
-  --secondary-gradient: linear-gradient(#4318ff 0%, #4318ff47 100%);
+  --primary-red: #53212b;
+  --secondary-red: #bd3944;
+  --tertiary-red: #fd4556;
+  --primary-grey: #fffbf5;
+  --primary-black: #f4f7fe;
+  --primary-gradient: linear-gradient(#ff8686 0%, #ff1818 100%);
+  --secondary-gradient: linear-gradient(#ff8686 0%, #ff181847 100%);
 }
