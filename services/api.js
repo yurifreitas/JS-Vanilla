@@ -1,15 +1,25 @@
-// Função de simulação de chamada de API para login
-export const  loginAPI = async (username, password) =>{
-    // Simule uma chamada de API com um atraso de 1 segundo
-    await new Promise(resolve => setTimeout(resolve, 1000));
+export const loginAPI = async (username, password) => {
+    const apiUrl = 'http://localhost:3000/login'; // Substitua pela URL real da sua API
 
-    // Verifique as credenciais e retorne os dados do usuário fictício
-    if (username === 'user' && password === 'password') {
-        return {
-            username: 'user',
-            fullName: 'John Doe', // Qualquer outra informação relevante
-        };
-    } else {
-        throw new Error('Invalid username or password');
+    const requestOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+    };
+
+    try {
+        const response = await fetch(apiUrl, requestOptions);
+       
+        debugger;
+        if (response.ok) {
+            const responseData = await response.json();
+            return responseData;
+        } else {
+            throw new Error('Authentication failed');
+        }
+    } catch (error) {
+        throw new Error('Failed to connect to the server' + error);
     }
-}
+};

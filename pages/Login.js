@@ -16,20 +16,54 @@ export function renderLogin() {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
     }
+    .login-container h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      
+      /* Estilos para as etiquetas dos campos de entrada */
+      .login-container label {
+        display: block;
+        font-size: 11px;
+        margin-bottom: 5px;
+        color: #555;
+        text-align: left;
+      }
+      
+      /* Estilos para os campos de entrada */
+      .login-container input[type="text"],
+      .login-container input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+      
 
     #login-button {
-        padding: 10px 20px;
+        width: 100%;
+        padding: 5px;
+        background-color: #007bff;
         border: none;
-        border-radius: 5px;
-        background-color: #333;
+        border-radius: 3px;
         color: #fff;
+        font-size: 11px;
         cursor: pointer;
-        transition: background-color 0.3s, transform 0.3s;
+        transition: background-color 0.3s ease;
     }
 
     #login-button:hover {
-        background-color: #555;
+        background-color: #0056b3;
         transform: scale(1.05);
     }
     `;
