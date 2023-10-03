@@ -1,3 +1,33 @@
-.character-icon{
-    width: 100px;
+.character-icon {
+  width: 100px;
+}
+#sidebar {
+  height: 100vh;
+  position: relative;
+  left: -100%;
+  background-color: var(--primary-grey);
+}
+
+.slideIn {
+  animation: slideIn 1s forwards;
+}
+
+.slideOut {
+  animation: slideOut 1s forwards;
+}
+@keyframes slideIn {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slideOut {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }

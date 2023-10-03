@@ -1,16 +1,14 @@
 // Componente Sidebar
 
-import getAllCaracters from '../services/allCharacters.js';
+import getAllCaracters from '../services/allCharacters.js'
 
+export async function renderSidebar() {
+  const sidebar = document.querySelector('#sidebar')
+  const divContainer = document.createElement('div')
 
-export async function renderSidebar (){
-    const sidebar = document.querySelector('#sidebar');
-
-    sidebar.innerHTML = `
-        <div>
-            <nav>
-                ${await getAllCaracters()}
-            </nav>
-        </div>
-    `;
+  divContainer.setAttribute('id', 'container-side-bar')
+  divContainer.innerHTML = `            <nav>
+  ${await getAllCaracters()}
+</nav>`
+  sidebar.appendChild(divContainer)
 }
