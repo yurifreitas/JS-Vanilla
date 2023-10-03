@@ -67,25 +67,6 @@ nav a:hover {
   /* Espaçamento interno do conteúdo principal */
 }
 
-/* Estilize o footer */
-#footer {
-  width: 100%;
-  background-color: #333;
-  /* Cor de fundo do footer */
-  color: white;
-  /* Cor do texto no footer */
-  padding: 10px;
-  /* Espaçamento interno do footer */
-  text-align: center;
-  /* Centraliza o texto no footer */
-}
-/*
-.row-top {
-  display: flex;
-  height: 20vh;
-  width: 100%;
-} */
-
 .row-center {
   width: 100%;
   display: flex;
