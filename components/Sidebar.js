@@ -3,12 +3,17 @@
 import getAllCaracters from '../services/allCharacters.js'
 
 export async function renderSidebar() {
-  const sidebar = document.querySelector('#sidebar')
-  const divContainer = document.createElement('div')
-
-  divContainer.setAttribute('id', 'container-side-bar')
-  divContainer.innerHTML = `            <nav>
-  ${await getAllCaracters()}
-</nav>`
-  sidebar.appendChild(divContainer)
+  
+  return (
+    `
+      <sidebar id="sidebar">
+        <div id="container-side-bar">
+          <nav class="navigation-sidebar">
+            ${await getAllCaracters()}
+          </nav>
+        </div>
+      </sidebar>
+    ` 
+  )
+  
 }

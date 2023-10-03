@@ -1,16 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'VALORANT', sans-serif;
-}
-
 :root {
   --primary-red: #53212b;
   --secondary-red: #bd3944;
   --tertiary-red: #fd4556;
   --primary-grey: #fffbf5;
-  --primary-black: #f4f7fe;
+  --primary-black: #000000;
   --primary-gradient: linear-gradient(#ff8686 0%, #ff1818 100%);
   --secondary-gradient: linear-gradient(#ff8686 0%, #ff181847 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'VALORANT', sans-serif;
+  color: var(--primary-grey);
+}
+
+body {
+  height: calc(400px + 100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

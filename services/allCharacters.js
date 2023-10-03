@@ -7,13 +7,14 @@ export default async function getAllCaracters(){
         return fetch('https://valorant-api.com/v1/agents?isPlayableCharacter=true&language=pt-BR')
         .then( async (response) => {
             const responseObject = await response.json()
+            console.log(responseObject.data);
             return responseObject.data
         })
         .then( data => createListElement(data))
-        .then( listElement => listElement)
+        
 
     }catch{
-        throw new Error('Deu TCHUTCHU na API, ASSOPRA A FITA PRA VER SE VAI!');
+        throw new Error('API error');
     }
 
 }

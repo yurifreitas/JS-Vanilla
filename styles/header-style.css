@@ -27,6 +27,13 @@ header h1 {
 #navigation ul {
   list-style: none;
   display: flex;
+  gap: 20px;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+a:link{
+  text-decoration: none;
 }
 
 #navigation ul li:hover {
@@ -35,8 +42,4 @@ header h1 {
   transform: scalex(1.05);
 }
 
-#search {
-  border-radius: 50px;
-  border: none;
-  padding: 10px 20px;
-}
+

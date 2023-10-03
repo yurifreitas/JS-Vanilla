@@ -1,15 +1,13 @@
-import { renderHome } from '../pages/Home.js';
-import { renderAbout } from '../pages/About.js';
-import { renderLogin } from '../pages/Login.js';
+import { renderAboutV2 } from '../pages/About.js';
+import { renderCharacters } from '../pages/Characters.js';
+
 export const navigationRoutes = [
-    { path: '/', name: 'Home' },
-    { path: '/about', name: 'About' },
-    { path: '/login', name: 'Sair' },
+    { path: '/', name: 'About' },
+    { path: '/Characters', name: 'Characters' }
 ];
 const routes = {
-    '/': renderHome,
-    '/about': renderAbout,
-    '/login': renderLogin,
+    '/': renderAboutV2,
+    '/Characters': renderCharacters
 };
 
 export const getRouteHandler = (route) => {

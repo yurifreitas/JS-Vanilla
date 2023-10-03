@@ -1,3 +1,6 @@
+import { router } from "../scripts/router.js"
+import { navigationRoutes } from "../scripts/routes.js"
+
 export const renderHeader = () => {
   // Renderizar dinamicamente os links do menu
   //   const navLinks = navigationRoutes
@@ -13,13 +16,11 @@ export const renderHeader = () => {
             <h1> Valorant info</h1>
 
             <nav id="navigation">
-                <ul>
+                <ul class="navigation-header">
                     <li></li>
-                    <li><a>Sobre o Jogo</a></li>
+                    <li><a href="#${navigationRoutes[0].path}">Sobre o Jogo</a></li>
                 </ul>
             </nav>
-
-            <input id="search" placeholder="Busque um personagem" maxlength="20"/>
 
         </div>
 
@@ -28,22 +29,13 @@ export const renderHeader = () => {
   const a = document.createElement('a')
   const li = document.querySelector('li')
   a.text = 'Personagens'
+  const route = navigationRoutes[1];
+  a.href = `#${route.path}`
 
   li.appendChild(a)
 
   a.addEventListener('click', () => {
-    openSideBar()
+    router()
   })
 }
 
-export function openSideBar() {
-  const sideBar = document.querySelector('sidebar')
-  if (sideBar.classList[0] === 'slideIn') {
-    sideBar.classList.remove('slideIn')
-    sideBar.classList.add('slideOut')
-  } else {
-    sideBar.classList.add('slideIn')
-    sideBar.classList.remove('slideOut')
-  }
-  console.log('sidebar tá on!')
-}
