@@ -37,3 +37,4 @@ Clone este repositório para o seu computador usando o seguinte comando no termi
 npm install
 npm run start
 ```
+salve rapaziada
