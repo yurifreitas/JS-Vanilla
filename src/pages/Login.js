@@ -1,5 +1,5 @@
 // pages/Login.js
-import { loginAPI } from '../services/api.js'; // Importe a função de simulação de chamada de API
+import { loginAPI,registerAPI } from '../services/api.js'; // Importe a função de simulação de chamada de API
 const createStyle = (styles) => {
     if (document.getElementById('login-page-styles')) return; // Se o estilo já existir, não faça nada
     const styleTag = document.createElement('style');
@@ -81,6 +81,7 @@ export function renderLogin() {
             <input type="password" id="password" name="password" required>
             <br>
             <button type="submit" id="login-button">Login</button>
+            <button type="button" id="register-button">Register</button>
         </form>
     </div>
     `;
@@ -91,7 +92,7 @@ export function renderLogin() {
 // Adicione um manipulador de evento para o formulário de login
 export function initLogin() {
     const loginForm = document.querySelector('#login-form');
-
+    const registerButton = document.querySelector('#register-button');
     loginForm.addEventListener('submit', async function (event) {
         event.preventDefault();
 
@@ -100,6 +101,25 @@ export function initLogin() {
 
         try {
             const user = await loginAPI(username, password);
+
+            if (user) {
+                alert('Login successful!');
+                window.location.hash = '/';  // Altera a rota para a página inicial
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        } catch (error) {
+            console.error('Error during login:', error);
+            alert('An error occurred during login. Please try again later.');
+        }
+    });
+    registerButton.addEventListener('click', function () {
+        
+        const username = document.querySelector('#username').value;
+        const password = document.querySelector('#password').value;
+
+        try {
+            const user = registerAPI(username, password);
 
             if (user) {
                 alert('Login successful!');

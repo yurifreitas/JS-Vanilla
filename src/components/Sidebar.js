@@ -1,6 +1,6 @@
 // Componente Sidebar
 import { navigationRoutes } from '../scripts/routes.js';
-export const renderSidebar =()=> {
+export const renderSidebar = async ()=> {
     const navLinks = navigationRoutes.map(route => {
         return `<a href="#${route.path}">${route.name}</a>`;
     }).join(' ');

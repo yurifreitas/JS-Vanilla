@@ -66,6 +66,7 @@ nav a:hover {
     display: block;
     width: 100%;
     padding: 10px;
+    overflow-x: hidden;
     /* Espaçamento interno do conteúdo principal */
 }
 
@@ -132,4 +133,33 @@ nav a:hover {
 
 .navbar {
     display: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Estiliza o polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #0a141e;
+}
+
+/* Estiliza o rastreamento da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #ff4654;
+}
+.pad {
+    width: calc(33.33% - 20px);
+    height: calc(50% - 20px);
+    margin: 10px;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+}
+
+.pad:hover {
+    background-color: #2980b9;
+}
+canvas{
+    width: 100%;
+    height: auto;
 }
